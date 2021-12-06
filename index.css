@@ -1,0 +1,47 @@
+* {
+  font-family: Calibri;
+}
+
+body {
+  background-color: rgb(2, 4, 29);
+}
+
+.list-container {
+  list-style: none;
+  border-left: 1px solid gray;
+}
+
+.list-item[collapse="true"] > .list-container {
+  height: 0;
+  display: none;
+}
+
+.list-item {
+  color: white;
+  padding: 2px 0;
+}
+
+.list-item-metadata {
+  display: flex;
+  align-items: center;
+}
+
+.list-item-metadata-icon {
+  transition: transform 0.25s;
+  margin-right: .5em;
+  font-family: monospace;
+}
+
+.list-item[collapse="false"] > .list-item-metadata > .list-item-metadata-icon {
+  transform: rotate(90deg);
+}
+
+.list-item-highlight > .list-item-metadata {
+  border-top: 1px solid blueviolet;
+  border-bottom: 1px solid blueviolet;
+  background: gray;
+}
+
+.list-item-dim {
+  opacity: 0.8;
+}
